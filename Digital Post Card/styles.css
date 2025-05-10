@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+body {
+	margin: 0;
+	background: white;
+	font-family: "Indie Flower", cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.postcard {
+	background: white;
+	width: 700px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	box-shadow: none;
+}
+
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.postcard-body {
+	display: flex;
+	flex: 1;
+}
+
+.body-left {
+	flex: 1;
+	padding: 20px;
+}
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-left p {
+	font-size: 16px;
+	line-height: 1.4;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+.body-right {
+	flex: 1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.body-right img {
+	display: none;
+}
+.body-right input,
+.body-right textarea {
+	font-family: inherit;
+	font-size: 16px;
+	border: none;
+	border-bottom: 1px solid #888;
+	margin-bottom: 15px;
+	padding: 5px 0;
+	width: 100%;
+	outline: none;
+}
+.body-right textarea {
+	resize: none;
+	height: 60px;
+}
+
+.postcard-footer {
+	text-align: center;
+	padding: 20px;
+}
+.postcard-footer button {
+	background-color: #ccc;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+}
